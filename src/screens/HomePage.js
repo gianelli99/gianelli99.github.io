@@ -1,13 +1,28 @@
 import React from 'react';
-import { Fade, Slide } from 'react-reveal';
 import { About } from '../components/About';
+import { Contact } from '../components/Contact';
+import { Experience } from '../components/Experience';
 import { NavBar } from '../components/NavBar';
+import { Portfolio } from '../components/Portfolio';
+import { Resume } from '../components/Resume';
+import { Tag } from '../components/Tag';
 
 export const HomePage = () => {
   return (
     <div className="primary-background">
       <NavBar />
-      <About />
+      <div className="tag-padding">
+        <div style={{ height: '300px' }}></div>
+        <Tag tagName="About" InnerComponent={About} />
+        <div style={{ height: '300px' }}></div>
+        <Tag tagName="Portfolio" InnerComponent={Portfolio} />
+        <div style={{ height: '300px' }}></div>
+        <Tag tagName="Experience" InnerComponent={Experience} />
+        <div style={{ height: '300px' }}></div>
+        <Tag tagName="Resume" InnerComponent={Resume} />
+        <div style={{ height: '300px' }}></div>
+        <Tag tagName="Contact" InnerComponent={Contact} />
+      </div>
     </div>
   );
 };
