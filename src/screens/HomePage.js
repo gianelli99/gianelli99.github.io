@@ -7,9 +7,7 @@ export const HomePage = () => {
   return (
     <div className="primary-background">
       <NavBar />
-      <Fade top>
-        <About />
-      </Fade>
+      <About />
     </div>
   );
 };

@@ -4,8 +4,9 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  height: 70px;
+  height: 4rem;
   top: 0px;
+  z-index: 1;
 }
 .navbar__list {
   display: flex;
