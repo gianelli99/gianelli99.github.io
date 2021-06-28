@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'Fira Mono';
+  src: url('https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap');
+}
+
+* {
+  font-family: 'Fira Mono', monospace;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.primary-background {
+  background-color: $primary;
+}
+.accent-color {
+  color: $accent;
+}
+.secondary-color {
+  color: $secondary;
+}
