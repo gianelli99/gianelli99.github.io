@@ -13,7 +13,9 @@ export const HomePage = () => {
       <NavBar />
       <div className="tag-padding">
         <div style={{ height: '300px' }}></div>
-        <Tag tagName="About" InnerComponent={About} />
+        <section id="about">
+          <Tag tagName="About" InnerComponent={About} />
+        </section>
         <div style={{ height: '300px' }}></div>
         <Tag tagName="Portfolio" InnerComponent={Portfolio} />
         <div style={{ height: '300px' }}></div>
@@ -21,7 +23,7 @@ export const HomePage = () => {
         <div style={{ height: '300px' }}></div>
         <Tag tagName="Resume" InnerComponent={Resume} />
         <div style={{ height: '300px' }}></div>
-        <Tag tagName="Contact" InnerComponent={Contact} />
+        <Tag tagName="Contact" InnerComponent={Contact} isLastElement />
       </div>
     </div>
   );
