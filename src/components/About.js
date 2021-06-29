@@ -1,15 +1,17 @@
 import React from 'react';
-import { Fade } from 'react-reveal';
-import { OpeningTag } from './OpeningTag';
-import { ClosingTag } from './ClosingTag';
 
 export const About = () => {
   return (
     <>
-      <h1 className="secondary-color lato-font">Hello, I'm Gianfranco Elli</h1>
-      <p>ME gusta hacer esto</p>
-      <p>esto</p>
-      <p>y lo otro</p>
+      <h1 className="lato-font about__title">Hi, I'm Gianfranco Elli</h1>
+      <p className="lato-font about__paragraph">
+        I'm a Systems Analyst (soon I'll be a Systems Engineer) passionate about
+        software development.
+      </p>
+      <p className="lato-font about__paragraph">
+        I love spending time looking "Underneath the Hood" at every technology
+        I'm working with and solving programming problems.
+      </p>
     </>
   );
 };

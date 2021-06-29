@@ -19,15 +19,49 @@ export const NavBar = () => {
               {'<About />'}
             </Link>
           </li>
-          <li>{'<Experience />'}</li>
-          <li>{'<Portfolio />'}</li>
-          <li>{'<Resume />'}</li>
+          <li>
+            <Link
+              to="portfolio"
+              smooth={true}
+              duration={1500}
+              spy={true}
+              offset={-64}
+              activeClass="accent-color"
+            >
+              {'<Portfolio />'}
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="experience"
+              smooth={true}
+              duration={1500}
+              spy={true}
+              offset={-64}
+              activeClass="accent-color"
+            >
+              {'<Experience />'}
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="resume"
+              smooth={true}
+              duration={1500}
+              spy={true}
+              offset={-64}
+              activeClass="accent-color"
+            >
+              {'<Resume />'}
+            </Link>
+          </li>
           <li>
             <Link
               to="contact"
               smooth={true}
               duration={1500}
               spy={true}
+              offset={-64}
               activeClass="accent-color"
             >
               {'<Contact />'}

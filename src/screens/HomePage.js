@@ -6,24 +6,53 @@ import { NavBar } from '../components/NavBar';
 import { Portfolio } from '../components/Portfolio';
 import { Resume } from '../components/Resume';
 import { Tag } from '../components/Tag';
+import { useWindowDimensions } from '../hooks/useWindowDimensions';
 
 export const HomePage = () => {
+  const { height } = useWindowDimensions();
   return (
     <div className="primary-background">
       <NavBar />
       <div className="tag-padding">
-        <div style={{ height: '300px' }}></div>
-        <section id="about">
+        <section
+          id="about"
+          style={{ height: height - 64 + 'px' }}
+          className="homepage-section"
+        >
           <Tag tagName="About" InnerComponent={About} />
         </section>
-        <div style={{ height: '300px' }}></div>
-        <Tag tagName="Portfolio" InnerComponent={Portfolio} />
-        <div style={{ height: '300px' }}></div>
-        <Tag tagName="Experience" InnerComponent={Experience} />
-        <div style={{ height: '300px' }}></div>
-        <Tag tagName="Resume" InnerComponent={Resume} />
-        <div style={{ height: '300px' }}></div>
-        <Tag tagName="Contact" InnerComponent={Contact} isLastElement />
+
+        <section
+          id="portfolio"
+          style={{ height: height - 64 + 'px' }}
+          className="homepage-section"
+        >
+          <Tag tagName="Portfolio" InnerComponent={Portfolio} />
+        </section>
+
+        <section
+          id="experience"
+          style={{ height: height - 64 + 'px' }}
+          className="homepage-section"
+        >
+          <Tag tagName="Experience" InnerComponent={Experience} />
+        </section>
+
+        <section
+          id="resume"
+          style={{ height: height - 64 + 'px' }}
+          className="homepage-section"
+        >
+          <Tag tagName="Resume" InnerComponent={Resume} />
+        </section>
+
+        <section
+          id="contact"
+          style={{ height: height - 64 + 'px' }}
+          className="homepage-section"
+        >
+          <Tag tagName="Contact" InnerComponent={Contact} isLastElement />
+        </section>
       </div>
     </div>
   );
