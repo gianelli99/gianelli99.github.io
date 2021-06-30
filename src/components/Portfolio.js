@@ -1,12 +1,13 @@
 import React from 'react';
+import { Project } from './Project';
 import { Tag } from './Tag';
 
 export const Portfolio = () => {
   return (
     <>
-      <Tag tagName="Mobile" InnerComponent={undefined} />
-      <Tag tagName="Web" InnerComponent={undefined} />
-      <Tag tagName="Desktop" InnerComponent={undefined} />
+      <Tag tagName="Mobile" InnerComponent={Project} />
+      <Tag tagName="Web" InnerComponent={Project} />
+      <Tag tagName="Desktop" InnerComponent={Project} />
     </>
   );
 };

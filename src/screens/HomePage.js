@@ -13,18 +13,31 @@ export const HomePage = () => {
   return (
     <div className="primary-background">
       <NavBar />
-      <div className="tag-padding">
+      <div className="tag-padding main-wrapper">
         <section
           id="about"
-          style={{ height: height - 64 + 'px' }}
+          style={{ minHeight: height - 154 + 'px' }}
           className="homepage-section"
         >
           <Tag tagName="About" InnerComponent={About} />
         </section>
-
+        <div
+          style={{
+            height: '30px',
+            margin: '30px',
+            display: 'flex',
+            justifyContent: 'center',
+          }}
+        >
+          <img
+            style={{ maxHeight: '100%', maxWidth: '100%' }}
+            src="./images/ScrollDown.png"
+            alt=""
+          />
+        </div>
         <section
           id="portfolio"
-          style={{ height: height - 64 + 'px' }}
+          style={{ minHeight: height - 64 + 'px' }}
           className="homepage-section"
         >
           <Tag tagName="Portfolio" InnerComponent={Portfolio} />
@@ -32,7 +45,7 @@ export const HomePage = () => {
 
         <section
           id="experience"
-          style={{ height: height - 64 + 'px' }}
+          style={{ minHeight: height - 64 + 'px' }}
           className="homepage-section"
         >
           <Tag tagName="Experience" InnerComponent={Experience} />
@@ -40,7 +53,7 @@ export const HomePage = () => {
 
         <section
           id="resume"
-          style={{ height: height - 64 + 'px' }}
+          style={{ minHeight: height - 64 + 'px' }}
           className="homepage-section"
         >
           <Tag tagName="Resume" InnerComponent={Resume} />
@@ -48,7 +61,7 @@ export const HomePage = () => {
 
         <section
           id="contact"
-          style={{ height: height - 64 + 'px' }}
+          style={{ minHeight: height - 64 + 'px' }}
           className="homepage-section"
         >
           <Tag tagName="Contact" InnerComponent={Contact} isLastElement />

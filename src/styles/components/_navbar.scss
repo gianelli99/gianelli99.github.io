@@ -7,6 +7,7 @@
   height: 4rem;
   top: 0px;
   z-index: 1;
+  background-color: darken($color: $primary, $amount: 5);
 }
 .navbar__list {
   display: flex;
